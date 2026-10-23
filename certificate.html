@@ -1,215 +1,513 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cyviora Technologies | Certificate Verification</title>
 
+<title>Cyviora Technologies | Certificate Verification</title>
+<meta name="description" content="Official Cyviora Technologies certificate verification portal.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
-body{
-background:#090909;
-background-image:
-radial-gradient(circle at top,#5a0000 0,#090909 40%),
-linear-gradient(rgba(255,0,0,.06) 1px,transparent 1px),
-linear-gradient(90deg,rgba(255,0,0,.06) 1px,transparent 1px);
-background-size:auto,35px 35px,35px 35px;
-color:#fff;
-display:flex;
-justify-content:center;
-align-items:center;
-min-height:100vh;
-padding:30px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-.card{
-width:100%;
-max-width:560px;
-background:#131313;
-border:1px solid #2c2c2c;
-border-radius:22px;
-overflow:hidden;
-box-shadow:0 0 40px rgba(255,0,0,.18);
+body {
+    min-height: 100vh;
+    padding: 30px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #090909;
+    background-image:
+        radial-gradient(circle at top, #390707 0, #090909 42%),
+        linear-gradient(rgba(255,0,0,.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,0,0,.04) 1px, transparent 1px);
+    background-size: auto, 35px 35px, 35px 35px;
 }
 
-.top{height:6px;background:linear-gradient(90deg,#900,#ff2d2d,#900);}
-.header{text-align:center;padding:28px}
-
-.logo{width:72px;height:72px;margin:auto;display:block}
-
-.company-name{
-display:flex;justify-content:center;gap:10px;
-margin-top:14px;font-size:30px;font-weight:700;letter-spacing:4px;
-flex-wrap:wrap;
-}
-.cyviora{color:#fff;}
-.technologies{color:#ff2d2d;}
-
-.sub{color:#cfcfcf;font-size:14px;margin-top:5px}
-.line{width:90px;height:3px;background:#ff2d2d;border-radius:10px;margin:18px auto}
-
-.status{
-display:inline-block;
-background:#0d5b28;
-padding:8px 16px;
-border-radius:999px;
-font-weight:600;
-color:#86ffb0;
-border:1px solid #1aff6d;
+.card {
+    width: 100%;
+    max-width: 840px;
+    background: #131313;
+    border: 1px solid #292929;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 0 40px rgba(255,0,0,.12);
 }
 
-.content{padding:30px}
-
-.photo{
-display:block;margin:auto;
-width:130px;height:130px;border-radius:50%;
-object-fit:cover;
-border:4px solid #ff2d2d;
-background:#222;
+.top {
+    height: 6px;
+    background: linear-gradient(90deg, #900, #ff3030, #900);
 }
 
-.name{text-align:center;font-size:26px;font-weight:700;margin-top:18px}
-.role{text-align:center;color:#d6d6d6;margin-top:6px;margin-bottom:24px}
-
-.grid{display:grid;gap:14px}
-
-.item{
-background:#1b1b1b;
-border:1px solid #2d2d2d;
-border-radius:12px;
-padding:14px 16px;
+.header {
+    text-align: center;
+    padding: 28px 18px 20px;
 }
 
-.label{font-size:12px;color:#a9a9a9;text-transform:uppercase}
-.value{font-size:16px;font-weight:600;margin-top:6px}
-
-/* 🔥 GREEN DOWNLOAD BUTTON */
-.download-btn{
-display:block;
-margin:25px auto 0;
-background:linear-gradient(90deg,#16a34a,#22c55e);
-padding:12px 20px;
-border-radius:10px;
-color:#fff;
-text-decoration:none;
-font-weight:600;
-text-align:center;
-width:fit-content;
-transition:0.3s;
+.logo {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    margin: 0 auto;
 }
 
-.download-btn:hover{
-background:linear-gradient(90deg,#15803d,#16a34a);
-transform:scale(1.05);
+.company-name {
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 9px;
+    font-size: clamp(22px, 4.5vw, 38px);
+    font-weight: 700;
+    letter-spacing: 4px;
+    line-height: 1.35;
 }
 
-.footer{
-padding:18px;text-align:center;font-size:13px;color:#aaa;
-border-top:1px solid #272727;
+.cyviora {
+    color: #fff;
+}
+
+.technologies {
+    color: #ff3038;
+}
+
+.sub {
+    color: #d0d0d0;
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.line {
+    width: 112px;
+    height: 4px;
+    background: #ff3038;
+    border-radius: 10px;
+    margin: 22px auto;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+    border: 1px solid;
+}
+
+.badge.valid {
+    color: #86ffb0;
+    background: #0d5b28;
+    border-color: #1aff6d;
+}
+
+.badge.invalid {
+    color: #ff8c8c;
+    background: #451313;
+    border-color: #ff4545;
+}
+
+.content {
+    padding: 26px 36px 32px;
+}
+
+.photo {
+    display: block;
+    width: 164px;
+    height: 164px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 5px solid #ff3038;
+    background: #222;
+    object-fit: cover;
+}
+
+.name {
+    text-align: center;
+    font-size: clamp(22px, 4vw, 29px);
+    font-weight: 700;
+    margin-top: 18px;
+    overflow-wrap: anywhere;
+}
+
+.role {
+    text-align: center;
+    color: #d1d1d1;
+    font-size: 14px;
+    margin: 6px 0 28px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+
+.item {
+    background: #1b1b1b;
+    border: 1px solid #303030;
+    border-radius: 14px;
+    padding: 17px 20px;
+    min-width: 0;
+}
+
+.label {
+    color: #b8b8b8;
+    font-size: 12px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+
+.value {
+    margin-top: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    overflow-wrap: anywhere;
+}
+
+.download-btn {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin: 26px auto 0;
+    padding: 13px 22px;
+    border-radius: 10px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    background: linear-gradient(90deg, #16a34a, #22c55e);
+    transition: transform .2s, background .2s;
+}
+
+.download-btn:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(90deg, #15803d, #16a34a);
+}
+
+.download-btn[hidden] {
+    display: none;
+}
+
+.message {
+    text-align: center;
+    padding: 28px 15px;
+    color: #ff8c8c;
+    line-height: 1.7;
+}
+
+.footer {
+    border-top: 1px solid #292929;
+    padding: 18px 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+
+[hidden] {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .card {
+        border-radius: 15px;
+    }
+
+    .header {
+        padding: 24px 12px 18px;
+    }
+
+    .company-name {
+        letter-spacing: 2px;
+        gap: 6px;
+    }
+
+    .content {
+        padding: 24px 18px;
+    }
+
+    .photo {
+        width: 130px;
+        height: 130px;
+    }
+
+    .item {
+        padding: 15px;
+    }
+
+    .value {
+        font-size: 14px;
+    }
 }
 </style>
 </head>
 
 <body>
 
-<div class="card">
-<div class="top"></div>
+<div class="card" id="certificateCard">
 
-<div class="header">
-<img class="logo" src="logo.png">
+    <div class="top"></div>
 
-<h1 class="company-name">
-<span class="cyviora">CYVIORA</span>
-<span class="technologies">TECHNOLOGIES</span>
-</h1>
+    <header class="header">
 
-<div class="sub">Official Certificate Verification</div>
-<div class="line"></div>
+        <img
+            class="logo"
+            src="/logo.png"
+            alt="Cyviora Technologies Logo"
+            onerror="this.onerror=null;this.src='/images/logo.png';"
+        >
 
-<span class="status">✔ VERIFIED CERTIFICATE</span>
-</div>
+        <h1 class="company-name">
+            <span class="cyviora">CYVIORA</span>
+            <span class="technologies">TECHNOLOGIES</span>
+        </h1>
 
-<div class="content">
+        <div class="sub">Official Certificate Verification</div>
 
-<img class="photo" id="photo" src="">
+        <div class="line"></div>
 
-<div class="name" id="name"></div>
-<div class="role" id="course"></div>
+        <span id="verificationBadge" class="badge invalid">
+            CHECKING CERTIFICATE...
+        </span>
 
-<div class="grid">
-<div class="item"><div class="label">Certificate ID</div><div class="value" id="certid"></div></div>
-<div class="item"><div class="label">Student Name</div><div class="value" id="student"></div></div>
-<div class="item"><div class="label">Course</div><div class="value" id="course2"></div></div>
-<div class="item"><div class="label">Duration</div><div class="value" id="duration"></div></div>
-<div class="item"><div class="label">Completion Date</div><div class="value" id="date"></div></div>
-<div class="item"><div class="label">Status</div><div class="value" id="status"></div></div>
-</div>
+    </header>
 
-<a id="downloadBtn" class="download-btn" href="#" download>
-⬇ Download Certificate
-</a>
+    <main class="content" id="certificateContent" hidden>
 
-</div>
+        <img
+            class="photo"
+            id="photo"
+            src=""
+            alt="Student Photo"
+        >
 
-<div class="footer">
-© 2026 Cyviora Technologies • Certificate Verification Portal
-</div>
+        <h2 class="name" id="name"></h2>
+
+        <p class="role" id="course"></p>
+
+        <div class="grid">
+
+            <div class="item">
+                <div class="label">Certificate ID</div>
+                <div class="value" id="certid"></div>
+            </div>
+
+            <div class="item">
+                <div class="label">Student Name</div>
+                <div class="value" id="student"></div>
+            </div>
+
+            <div class="item">
+                <div class="label">Course</div>
+                <div class="value" id="course2"></div>
+            </div>
+
+            <div class="item">
+                <div class="label">Duration</div>
+                <div class="value" id="duration"></div>
+            </div>
+
+            <div class="item">
+                <div class="label">Completion Date</div>
+                <div class="value" id="date"></div>
+            </div>
+
+            <div class="item">
+                <div class="label">Status</div>
+                <div class="value" id="status"></div>
+            </div>
+
+        </div>
+
+        <a
+            id="downloadBtn"
+            class="download-btn"
+            href="#"
+            download
+            hidden
+        >
+            ⬇ Download Certificate
+        </a>
+
+    </main>
+
+    <div class="message" id="message" hidden></div>
+
+    <footer class="footer">
+        © 2026 Cyviora Technologies • Certificate Verification Portal
+    </footer>
 
 </div>
 
 <script>
-const params = new URLSearchParams(window.location.search);
-const id = params.get("id");
+"use strict";
+
+/*
+  Certificate records.
+  Keep image and PDF paths exactly the same as your filenames.
+*/
 
 const certificates = {
 
-"CERT001":{
-name:"Amit Sharma",
-student:"Amit Sharma",
-course:"Cyber Security Professional Program",
-course2:"Cyber Security Professional Program",
-certid:"CYV-CERT-001",
-duration:"3 Months",
-date:"15 Aug 2026",
-status:"Valid",
-photo:"images/amit.png",
-file:"certificates/CERT001_Amit_Sharma.pdf"
-},
+    "CERT001": {
+        name: "Amit Sharma",
+        student: "Amit Sharma",
+        course: "Cyber Security Professional Program",
+        certid: "CYV-CERT-001",
+        duration: "3 Months",
+        date: "15 Aug 2026",
+        status: "Valid",
+        photo: "/images/amit.png",
+        file: "/certificates/CERT001_Amit_Sharma.pdf"
+    },
 
-"CERT002":{
-name:"Ritik Naithani",
-student:"Ritik Naithnai",
-course:"Cyber Security Professional Program",
-course2:"Cyber Security Professional Program",
-certid:"CYV-CERT-002",
-duration:"3 Months",
-date:"20 Aug 2026",
-status:"Valid",
-photo:"images/ritik.png",
-file:"certificates/CERT002_Ritik_Naithani.pdf"
-}
+    "CERT002": {
+        name: "Ritik Naithani",
+        student: "Ritik Naithani",
+        course: "Cyber Security Professional Program",
+        certid: "CYV-CERT-002",
+        duration: "3 Months",
+        date: "20 Aug 2026",
+        status: "Valid",
+        photo: "/images/ritik.png",
+        file: "/certificates/CERT002_Ritik_Naithani.pdf"
+    },
+
+    "CERT003": {
+        name: "Komal Kumari",
+        student: "Komal Kumari",
+        course: "Cyber Security Master Program",
+        certid: "CYV-CERT-003",
+        duration: "6 Months",
+        date: "16 Feb 2026",
+        status: "Valid",
+        photo: "/images/komal_img.jpeg",
+        file: "/certificates/CERT003_komal_certificate.pdf"
+    },
+
+    "CERT004": {
+        name: "Biswajit Chakraborty",
+        student: "Biswajit Chakraborty",
+        course: "Cyber Security Master Program",
+        certid: "CYV-CERT-004",
+        duration: "6 Months",
+        date: "16 Feb 2026",
+        status: "Valid",
+        photo: "/images/biswajit_img.jpeg",
+        file: "/certificates/CERT004_biswajit_certificate.pdf"
+    },
+
+    "CERT005": {
+        name: "Ankur Sharma",
+        student: "Ankur Sharma",
+        course: "Cyber Security Master Program",
+        certid: "CYV-CERT-005",
+        duration: "6 Months",
+        date: "16 Feb 2026",
+        status: "Valid",
+        photo: "/images/ankur_img.jpeg",
+        file: "/certificates/CERT005_ankur_certificate.pdf"
+    }
+
 };
 
-const cert = certificates[id];
+const elements = {
+    badge: document.getElementById("verificationBadge"),
+    content: document.getElementById("certificateContent"),
+    message: document.getElementById("message"),
+    photo: document.getElementById("photo"),
+    name: document.getElementById("name"),
+    student: document.getElementById("student"),
+    course: document.getElementById("course"),
+    course2: document.getElementById("course2"),
+    certid: document.getElementById("certid"),
+    duration: document.getElementById("duration"),
+    date: document.getElementById("date"),
+    status: document.getElementById("status"),
+    download: document.getElementById("downloadBtn")
+};
 
-if(cert){
-document.getElementById("name").innerText = cert.name;
-document.getElementById("student").innerText = cert.student;
-document.getElementById("course").innerText = cert.course;
-document.getElementById("course2").innerText = cert.course2;
-document.getElementById("certid").innerText = cert.certid;
-document.getElementById("duration").innerText = cert.duration;
-document.getElementById("date").innerText = cert.date;
-document.getElementById("status").innerText = cert.status;
-document.getElementById("photo").src = cert.photo;
+function showError(message) {
+    elements.badge.textContent = "✖ CERTIFICATE NOT FOUND";
+    elements.badge.className = "badge invalid";
 
-document.getElementById("downloadBtn").href = cert.file;
-
-}else{
-document.body.innerHTML = "<h2 style='color:red;text-align:center;'>❌ Certificate Not Found</h2>";
+    elements.content.hidden = true;
+    elements.message.textContent = message;
+    elements.message.hidden = false;
 }
+
+function displayCertificate(cert) {
+    elements.name.textContent = cert.name;
+    elements.student.textContent = cert.student;
+    elements.course.textContent = cert.course;
+    elements.course2.textContent = cert.course;
+    elements.certid.textContent = cert.certid;
+    elements.duration.textContent = cert.duration;
+    elements.date.textContent = cert.date;
+    elements.status.textContent = cert.status;
+
+    elements.badge.textContent =
+        cert.status === "Valid"
+        ? "✔ VERIFIED CERTIFICATE"
+        : "✖ " + cert.status.toUpperCase();
+
+    elements.badge.className =
+        cert.status === "Valid"
+        ? "badge valid"
+        : "badge invalid";
+
+    elements.photo.onerror = function () {
+        this.onerror = null;
+        this.removeAttribute("src");
+        this.alt = "Student photo unavailable";
+    };
+
+    elements.photo.src = cert.photo;
+
+    elements.download.href = cert.file;
+    elements.download.hidden = false;
+
+    elements.message.hidden = true;
+    elements.content.hidden = false;
+}
+
+function init() {
+    const params = new URLSearchParams(window.location.search);
+    const id = (params.get("id") || "").trim().toUpperCase();
+
+    if (!id) {
+        showError("Please provide a certificate ID in the URL, for example: ?id=CERT001");
+        return;
+    }
+
+    const cert = certificates[id];
+
+    if (!cert) {
+        showError("No certificate matches this ID. Please check the ID and try again.");
+        return;
+    }
+
+    displayCertificate(cert);
+}
+
+init();
 </script>
 
 </body>
